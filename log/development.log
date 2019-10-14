@@ -56,3 +56,17 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 750ms (Views: 725.4ms | ActiveRecord: 2.3ms)
 
 
+Started POST "/posts" for 104.218.140.34 at 2019-10-14 12:44:41 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9uVKgJ/HfQ+jXQSZFOSP+5Xbi2h/G/Ee0FxCyyKQeruZpmfl26jTWZddHBOcGfJhT7zNdiIgQ8+FhouLrNQZpA==", "title"=>"test", "description"=>"test", "commit"=>"Submit Post"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fa094bf4c80>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:15:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
