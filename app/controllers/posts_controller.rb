@@ -1,5 +1,3 @@
-require 'pry'
-
 class PostsController < ApplicationController
 
   def index
@@ -15,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    binding.pry
+    byebug
     @post = Post.new
     @post.title = params[:title]
     @post.description = params[:description]
